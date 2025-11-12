@@ -1,0 +1,322 @@
+/* Note: No credit is provided for submitting design and/or code that is taken */
+/*       from course-provided examples.                                        */
+/*                                                                             */
+/* Do not copy this code into your project submission and then change it.      */
+/*                                                                             */
+/* Write your own code from scratch. Use this example as a REFERENCE only.     */
+/*                                                                             */
+/* You may not copy this code, change a few names/variables, and then claim it */
+/* as your own. It does not matter if you can explain what every line does.    */
+/*                                                                             */
+/* Examples are provided to help you learn. Copying the example and then       */
+/* changing it a bit, does not help you learn the learning objectives of the   */
+/* assignments. Write your own code from scratch to help you learn it.         */
+
+html {
+  font-family: 'Lucida Grande', 'Cantarell', 'Arial', sans-serif;
+  background-color: #cfcbbf;
+}
+
+body {
+  background-color: #efece5;
+  color: #000000;
+
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+h1 {
+  padding: 18px;
+  margin: 0;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+header h1 {
+  background-color: #efece5;
+  transition: background-color 0.4s;
+}
+
+nav menu {
+  display: flex;
+  flex-direction: row;
+
+  margin: 0;
+  padding: 0;
+}
+
+nav menu li {
+  list-style: none;
+}
+
+nav menu li a {
+  display: block;
+  padding: 10px;
+  padding-left: 18px;
+
+  border-bottom: 8px solid #efece5;
+  color: black;
+
+  font-size: 140%;
+  text-decoration: none;
+}
+
+nav menu li a:hover {
+  border-bottom: 8px solid #55bea9;
+  background-color: #ffffff;
+}
+
+h2 {
+  font-size: 160%;
+}
+
+cite {
+  font-size: 80%;
+}
+
+blockquote {
+  border-left: 2px solid #50525c;
+  padding: 0 10px;
+  margin-left: 0;
+  margin-bottom: 0;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+.highlight-middle cite a {
+  color: white;
+}
+
+.left-image {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+  /* padding: 0 16px; */
+
+  background-color: #ffffff;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+
+.theme-image img {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 800px;
+}
+
+.highlight-top {
+  padding: 20px;
+
+  color: white;
+  background-color: #f3633e;
+}
+
+.highlight-middle {
+  padding: 20px;
+
+  color: white;
+  background-color: #3e587e;
+}
+
+.highlight-bright {
+  padding: 20px;
+
+  color: white;
+  background-color: #55bea9;
+}
+
+.readable {
+  padding: 16px;
+
+  background-color: white;
+  color: rgb(47, 70, 108);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
+
+.readable p {
+  margin-top: 0;
+}
+
+.fit-width {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  min-width: 400px;
+}
+
+.button {
+  display: block;
+  width: max-content;
+
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: #55bea9;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+/* Cookie Banner */
+
+.banner {
+  display: flex;
+  align-items: center;
+
+  background: #fcbe57;
+  box-shadow: 0 0 5px 1px #0000004d;
+
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  border: none;
+  padding: 20px 30px;
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+}
+
+.banner .button {
+  font-size: 11pt;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.banner p {
+  flex-grow: 1;
+}
+
+.banner .button:hover {
+  color: black;
+  background-color: white;
+  border: 2px solid black;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Thumbnail Gallery */
+
+.thumbnail-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+.thumbnail-gallery figure {
+  margin: 0;
+}
+
+.thumbnail-gallery figure>img {
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+#gallery-thumbnails {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  flex-grow: 1;
+  min-width: 140px;
+}
+
+#gallery-thumbnails img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border: 2px solid black;
+  background-color: black;
+  outline: none;
+}
+
+#gallery-figures figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.animals figure img {
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .thumbnail-gallery {
+    flex-direction: row;
+  }
+
+  #gallery-thumbnails {
+    flex-direction: column;
+    flex-grow: 0;
+    width: 170px;
+    min-width: 140px;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 700px) {
+  header h1 {
+    background-color: #cfcbbf;
+  }
+
+  nav menu {
+    flex-direction: column;
+  }
+
+  nav menu li a {
+    display: block;
+    padding: 16px 8px 16px 12px;
+    border-left: 8px solid #efece5;
+    border-bottom: 0;
+  }
+
+  nav menu li a:hover {
+    border-left: 8px solid #55bea9;
+    border-bottom: 0;
+
+    border-bottom: none;
+    padding-bottom: 16px;
+  }
+
+  .left-image {
+    flex-direction: column;
+    background-color: inherit;
+    padding: 0;
+  }
+
+  .content-container {
+    flex-direction: column;
+  }
+
+  /* text for events */
+  .events-text {
+    order: 2;
+  }
+}

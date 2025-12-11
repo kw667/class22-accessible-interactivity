@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>About - Study Hub</title>
+    <link rel="stylesheet" href="styles/site-minimal-practice.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="site-title">📚 Study Hub</h1>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>About Study Hub</h1>
+            <p>Learn more about this project and its mission.</p>
+        </section>
+
+        <!-- ===== PRACTICE: DOCUMENT FRAGMENT LINKS ===== -->
+        <!-- Links below link to sections with ID attributes -->
+        <nav class="about-toc">
+            <h2>Quick Links</h2>
+            <menu>
+                <li><a href="#about-project">About This Project</a></li>
+                <li><a href="#design-process">Design Process</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </menu>
+        </nav>
+        <!-- Practice: Document fragment links - scroll to section with matching ID -->
+
+        <!-- ABOUT PROJECT SECTION -->
+        <section id="about-project">
+            <h2>About This Project</h2>
+            <p>
+                Study Hub is a practice website built as part of INFO 1300: Introduction to Web Design and Programming at Cornell University.
+            </p>
+            <p>
+                The goal of this site is to create a useful resource hub for college students while practicing key web design and development concepts.
+            </p>
+
+            <!-- Practice: Semantic HTML structure - <aside> for supplementary info -->
+            <aside class="info-box">
+                <h3>Built With</h3>
+                <ul>
+                    <li>HTML - semantic structure</li>
+                    <li>CSS - responsive design, flexbox, media queries</li>
+                    <li>JavaScript - client-side interactivity</li>
+                    <li>jQuery - simplified DOM manipulation</li>
+                </ul>
+            </aside>
+        </section>
+
+        <!-- DESIGN PROCESS SECTION -->
+        <section id="design-process">
+            <h2>Design Process</h2>
+            <!-- Practice: Design process from class -->
+
+            <h3>1. Identify Audience</h3>
+            <p>Primary audience: College students looking to organize and share study resources.</p>
+
+            <h3>2. Understand Goals</h3>
+            <ul>
+                <li>Find study materials quickly by subject</li>
+                <li>Access study tools and templates</li>
+                <li>Develop better study habits</li>
+                <li>Collaborate with other students (future feature)</li>
+            </ul>
+
+            <h3>3. Content & Organization</h3>
+            <p>Used card sorting to organize content into pages: Home, Subjects, Resources, Tools, and About.</p>
+
+            <h3>4. Design & Sketch</h3>
+            <p>
+                Designed responsive layout for narrow (mobile) and wide (desktop) screens.
+                Used familiar layout patterns: header navigation, feature cards, footer.
+            </p>
+
+            <h3>5. Code</h3>
+            <p>
+                Implemented with semantic HTML, responsive CSS (flexbox, media queries),
+                and client-side JavaScript interactivity.
+            </p>
+
+            <h3>6. Test & Evaluate</h3>
+            <p>
+                <!-- TODO: Conduct user testing with classmates -->
+                <!-- TODO: Check accessibility with screen readers -->
+                <!-- TODO: Test on mobile and desktop browsers -->
+            </p>
+        </section>
+
+        <!-- PRIVACY POLICY SECTION -->
+        <section id="privacy">
+            <h2>Privacy Policy</h2>
+            <p>
+                <strong>Data Collection:</strong> This site uses cookies to remember your preferences
+                (like dark mode and cookie acceptance). No personal data is collected or shared.
+            </p>
+            <p>
+                <strong>Your Rights:</strong> You can reject non-essential cookies at any time.
+                You can request deletion of stored preferences by clearing your browser's local storage.
+            </p>
+            <p>
+                <strong>Third-party Services:</strong> This site does not use any third-party tracking or analytics.
+            </p>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                Questions or suggestions about Study Hub?
+                <!-- TODO: Add contact form or email link -->
+            </p>
+            <p>
+                This is a student project for INFO 1300. All feedback is welcome!
+            </p>
+        </section>
+
+        <!-- PRACTICE: CLASS METHODS & TECHNIQUES USED -->
+        <section class="methods-checklist">
+            <h2>Methods & Techniques Used</h2>
+            <p>See the end of this file (in comments) and checklist.md for mapping of techniques to code locations.</p>
+
+            <!-- Practice: <details> + <summary> for collapsible content -->
+            <!-- TODO: Consider adding interactive expand/collapse for technique list -->
+            <ul>
+                <li>✅ Semantic HTML (nav, main, footer, article, aside, figure, etc.)</li>
+                <li>✅ Responsive design (viewport meta tag, flexible layout)</li>
+                <li>✅ CSS flexbox layout</li>
+                <li>✅ Media queries for responsive breakpoints</li>
+                <li>✅ Multi-page website with navigation</li>
+                <li>✅ Relative URLs for internal links</li>
+                <li>✅ Image accessibility (alt text, figure elements)</li>
+                <li>✅ CSS class selectors and combinators</li>
+                <li>✅ Client-side interactivity (JavaScript)</li>
+                <li>✅ jQuery for DOM manipulation</li>
+                <li>✅ Document fragment links (jump links)</li>
+                <li>✅ Accessibility features (ARIA labels, focus states, keyboard nav)</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Study Hub. All rights reserved.</p>
+        <p><a href="about.html">About</a> | <a href="#privacy">Privacy</a> | <a href="#contact">Contact</a></p>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/cookie-banner.js"></script>
+</body>
+
+</html>

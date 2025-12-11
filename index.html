@@ -4,153 +4,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Practice: Responsive design - viewport meta tag tells mobile browsers the correct width -->
 
-  <link rel="stylesheet" type="text/css" href="styles/site.css">
+  <title>Study Hub - Your Learning Companion</title>
+  <link rel="stylesheet" href="styles/site-minimal-practice.css">
+  <!-- Practice: Linking CSS file - stylesheet reference in <head> -->
 
-  <title>Home - The Ithaca Zoo</title>
+  <link rel="icon" href="../images/favicon.svg">
+  <!-- Practice: Favicon - displays in browser tab (used when publishing) -->
 </head>
 
 <body>
-  <!-- Accessibility: Cookie banner should be the first thing that loads. -->
-  <dialog id="cookie-banner" class="banner">
-    <p>This website uses cookies to ensure you get the best experience on our website.</p>
-    <button id="cookie-accept-button" class="button" aria-label="accept cookies">Accept</button>
-  </dialog>
 
-  <header>
-    <h1>The Ithaca Zoo</h1>
-
-    <nav>
+  <!-- ===== PRACTICE: MULTI-PAGE NAVIGATION ===== -->
+  <!-- Use <nav> + <menu> + relative URLs for navigation between pages -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <h1 class="site-title">📚 Study Hub</h1>
       <menu>
         <li><a href="index.html">Home</a></li>
-        <li><a href="popular.html">Popular Animals</a></li>
-        <li><a href="rules.html">Safety</a></li>
+        <li><a href="subjects.html">Subjects</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="tools.html">Tools</a></li>
+        <li><a href="about.html">About</a></li>
       </menu>
-    </nav>
-  </header>
+    </div>
+  </nav>
+  <!-- TODO: Style <nav> with flexbox for responsive layout -->
 
-  <main>
-    <!-- Source: original content -->
-    <div class="highlight-top">
-      <h2>Welcome!</h2>
-
-      <div class="readable">
-        <div class="left-image">
-          <picture class="logo">
-            <!-- Source: original work -->
-            <img src="images/zoo-logo.png" alt="">
-          </picture>
-
-          <div>
-            <p>
-              We're so excited to share our love of animals with our neighbors, and we hope you come visit soon. Whether you stop by once while you're passing through town or come multiple times a week, you'll find the Ithaca Zoo is ready to welcome you with open arms.
-            </p>
-
-            <p>
-              <strong>Advisory:</strong> due to upcoming hot weather, we advise all guests to make sure they bring sunscreen for protection from ultraviolet rays and a water bottle to help stay hydrated. We have water fountains all over the zoo where you can fill up. Just look for the signs that say "Watering Hole."
-            </p>
-          </div>
-        </div>
+  <!-- ===== PRACTICE: CLIENT-SIDE INTERACTIVITY - COOKIE BANNER ===== -->
+  <!-- Cookie banner for consent + practice dismiss functionality -->
+  <div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+      <p>
+        <strong>Cookie Notice:</strong> This site uses cookies to improve your experience.
+        <a href="about.html">Learn more</a>
+      </p>
+      <div class="cookie-buttons">
+        <button id="cookie-accept" class="btn-primary" aria-label="accept cookies">Accept</button>
+        <button id="cookie-reject" class="btn-secondary" aria-label="reject cookies">Reject</button>
       </div>
     </div>
+  </div>
+  <!-- TODO: Write CSS class .cookie-hidden to hide this element (display: none) -->
+  <!-- TODO: Add JavaScript event listener to dismiss banner on button click -->
 
-    <section class="highlight-middle">
-      <!-- Source: original content -->
-      <h2>About the Zoo</h2>
-
-      <p>The Ithaca Zoo is New York's premier hillside zoo, and fun for the whole family.</p>
-
-      <picture>
-        <img class="fit-width" src="images/downtown-ithaca.jpg" alt="Downtown Ithaca with a view of Cayuga Lake">
-      </picture>
-      <cite>Source: <a href="https://brand.cornell.edu/design-center/photography/">Cornell University Branding Office</a></cite>
-
-      <p>Founded in 1972, we've proudly hosted tourists from 37 countries and thousands of local visitors from Tompkins county.</p>
-
-      <p>For over 45 years, we've been committed to our primary mission: conservation and protection.</p>
-    </section>
-
-    <section class="events highlight-bright">
-      <!-- Source: original content -->
-      <h2>Events</h2>
-
-      <div class="content-container readable">
-        <div class="events-text">
-          <p>
-            Our next event is the Red Panda Meet and Greet, where you have a chance to meet our favorite little bundles of joy, <em>Red</em> and <em>Fluffy</em>. This will take place next Saturday from 1:00-4:30 PM. <strong>There will be a line</strong>, so come early.
-          </p>
-
-          <blockquote>
-            <p>
-              The Red Panda Meet and Greet was the most fun my kids had all summer! - John Smith Sr.
-            </p>
-          </blockquote>
-
-          <blockquote>
-            <p>
-              Meeting Apple and Fluffy was cool. - John Smith Jr.
-            </p>
-          </blockquote>
-        </div>
-
-        <div class="events-picture">
-          <picture class="theme-image">
-            <img src="images/red-panda.jpg" alt="">
-          </picture>
-          <cite class="picture-citation">
-            Source: <a href="https://www.flickr.com/photos/138191974@N03/23714231979">Biology Club</a>
-          </cite>
-        </div>
+  <main>
+    <!-- ===== PRACTICE: HERO SECTION ===== -->
+    <!-- Large featured image + content - captures user attention -->
+    <section class="hero">
+      <figure class="hero-figure">
+        <!-- Practice: Responsive image - use <figure> + <img> + descriptive alt text -->
+        <!-- Practice: Image accessibility - alt text describes image for screen readers -->
+        <!-- TODO: Add your own hero image (books, desk, studying theme) -->
+        <img src="images/hero-study.jpg" alt="Student studying at desk with open books and laptop" class="hero-image">
+        <!-- Practice: Image element structure - always use <img> inside <figure> -->
+      </figure>
+      <div class="hero-content">
+        <!-- Practice: Semantic HTML - use <section>, <h1>, <p> for structure -->
+        <h1>Master Your Studies</h1>
+        <p>Organize your learning, access resources, and build better study habits.</p>
+        <!-- Practice: Call-to-action link - guides user to main content -->
+        <a href="subjects.html" class="btn-primary" aria-label="explore study subjects">Explore Subjects</a>
       </div>
     </section>
+    <!-- TODO: Style hero with flexbox for responsive row/column layout -->
 
-    <section>
-      <!-- Source: original content -->
-      <h2>Our Animals</h2>
+    <!-- ===== PRACTICE: FEATURE CARDS WITH FLEXBOX ===== -->
+    <section class="featured-section">
+      <h2>Why Choose Study Hub?</h2>
+      <div class="features-container">
+        <!-- Practice: Flexbox layout - container for horizontal card arrangement -->
+        <!-- Practice: <article> semantic element for independent content units -->
+        <!-- TODO: Add more feature cards with icons or images -->
 
-      <p>We host a wide variety of animals in climate-controlled biomes designed to perfectly match their natural environments.</p>
+        <article class="feature-card">
+          <h3>🎯 Organized Resources</h3>
+          <p>Find curated study materials by subject and topic. Get to your resources faster.</p>
+        </article>
 
-      <a class="button" href="popular.html">See the Animals</a>
+        <article class="feature-card">
+          <h3>⏱️ Built-in Tools</h3>
+          <p>Access timers, flashcard organizers, and productivity tips without leaving the site.</p>
+        </article>
 
-      <p>Our many viewing platforms and walkways provide incredible views of our animals but keep guests at a safe distance.</p>
+        <article class="feature-card">
+          <h3>📱 Responsive Design</h3>
+          <p>Study on any device—desktop, tablet, or mobile. Your content adapts perfectly.</p>
+        </article>
 
-      <p>This is to keep you safe from them, and them safe from you.</p>
-
-      <p>However, there are a few animals that are safe for you to feed in supervised sessions.</p>
-
-      <p>Just look for the happy zookeeper sign along edge of the enclosure to learn about the time and location for these opportunities.</p>
+        <article class="feature-card">
+          <h3>♿ Fully Accessible</h3>
+          <p>Built with accessibility in mind. Works with screen readers and keyboard navigation.</p>
+        </article>
+      </div>
+      <!-- TODO: Use CSS class selector to style .feature-card elements -->
+      <!-- TODO: Use flexbox in .features-container with flex-wrap for responsive layout -->
     </section>
 
-    <section>
-      <!-- Source: original content -->
-      <h2>Main Attractions</h2>
-      <p>In addition to our wonderful animals, the zoo includes a fully functional food court featuring some of Ithaca's
-        best chefs.</p>
-
-      <h3>Sections of the Zoo</h3>
-      <ul>
-        <li>Indoor Ocean</li>
-        <li>Tangled Swamp</li>
-        <li>Hidden Jungle</li>
-        <li>Alpine Mountains</li>
-        <li>Central Savanna</li>
-        <li>Arid Desert</li>
-      </ul>
+    <!-- ===== PRACTICE: CALL-TO-ACTION SECTION ===== -->
+    <section class="cta-section">
+      <h2>Ready to Study Smarter?</h2>
+      <p>Choose a subject, find resources, and start learning today.</p>
+      <a href="subjects.html" class="btn-primary btn-large">Get Started Now</a>
     </section>
-
-    <section>
-      <!-- Source: original content -->
-      <h2>Directions</h2>
-
-      <p>Head west from <a href="https://www.cityofithaca.org/">downtown Ithaca</a> on Highway 79 until you reach the bend in the road.</p>
-
-      <p>You'll see three large signs indicating the turnoff to the Ithaca Zoo.</p>
-
-      <p>You can also take the TCAT line 340 from Trumansburg; it will drop you off right at the zoo.</p>
-    </section>
+    <!-- TODO: Center this section's content. Use flexbox + margin auto technique -->
   </main>
 
+  <!-- ===== PRACTICE: FOOTER ===== -->
+  <!-- Semantic footer with links and copyright -->
+  <footer class="site-footer">
+    <p>&copy; 2025 Study Hub. All rights reserved.</p>
+    <p>
+      <a href="about.html">About</a> |
+      <a href="about.html#privacy">Privacy Policy</a> |
+      <a href="about.html#contact">Contact</a>
+    </p>
+    <!-- Practice: Document fragment links - #privacy, #contact link to sections in about.html -->
+  </footer>
+
+  <!-- ===== PRACTICE: LOADING JAVASCRIPT ===== -->
+  <!-- JavaScript is loaded at END of <body> (before closing </body> tag) -->
+  <!-- This ensures HTML loads first, then JS can manipulate it -->
+
+  <!-- jQuery library - must load BEFORE custom scripts that use it -->
   <script src="scripts/jquery-3.7.1.js"></script>
+
+  <!-- Custom interactivity script -->
+  <!-- TODO: Create scripts/cookie-banner.js with event listener for cookie dismissal -->
   <script src="scripts/cookie-banner.js"></script>
 
 </body>

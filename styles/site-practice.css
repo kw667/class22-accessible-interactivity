@@ -1,0 +1,488 @@
+/* ========================================
+   STUDY HUB - STYLESHEET (PRACTICE VERSION)
+   CSS Practice for INFO 1300
+
+   Instructions: This is a practice template where you implement
+   the CSS yourself. The comments explain what to do, but the
+   code is removed. Use this to practice writing CSS from scratch!
+   ======================================== */
+
+/* ===== PRACTICE: CSS RESET & BASE STYLES ===== */
+/* Set margin and padding to 0 for all elements using * selector */
+/* Set box-sizing to border-box for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== PRACTICE: ROOT / BODY STYLES ===== */
+/* TODO: Set font-family to 'Segoe UI', 'Arial', sans-serif */
+/* TODO: Set line-height to 1.6 */
+/* TODO: Set color to #333 (dark gray) */
+/* TODO: Set background-color to #f9f9f9 (light gray) */
+
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ===== PRACTICE: COLOR & CONTRAST ===== */
+/* TODO: Set h1, h2, h3 color to #1a1a1a (very dark) */
+/* TODO: Set h1, h2, h3 margin to 1rem 0 0.5rem 0 */
+/* TODO: Set p margin-bottom to 1rem */
+
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin: 1rem 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== PRACTICE: NAVIGATION BAR ===== */
+/* TODO: Create .navbar class with:
+   - background-color: #2c3e50
+   - padding: 1rem
+   - box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+*/
+
+
+
+/* TODO: Create .navbar-container class with:
+   - max-width: 1200px
+   - margin: 0 auto
+   - display: flex
+   - justify-content: space-between
+   - align-items: center
+*/
+
+/* TODO: Style .site-title with:
+   - color: #fff
+   - font-size: 1.8rem
+   - margin: 0
+*/
+
+/* TODO: Style nav menu with:
+   - display: flex
+   - list-style: none
+   - gap: 2rem
+*/
+
+/* TODO: Style nav menu a with:
+   - color: #fff
+   - text-decoration: none
+   - Add :hover state with color change
+   - Add transition: background-color 0.3s ease
+*/
+
+/* TODO: Add focus state for nav menu a with:
+   - outline: 2px solid #ffeb3b
+   - outline-offset: 2px
+*/
+
+/* ===== PRACTICE: BUTTONS ===== */
+/* TODO: Create .btn-primary class with:
+   - background-color: #3498db
+   - color: #fff
+   - padding: 0.75rem 1.5rem
+   - border: none
+   - border-radius: 4px
+   - font-size: 1rem
+   - cursor: pointer
+   - text-decoration: none
+   - display: inline-block
+   - transition: background-color 0.3s ease
+*/
+
+/* TODO: Add .btn-primary:hover with background-color: #2980b9 */
+/* TODO: Add .btn-primary:focus with outline: 2px solid #1a1a1a and outline-offset: 2px */
+
+/* TODO: Create .btn-secondary class similar to .btn-primary but with:
+   - background-color: #95a5a6
+   - :hover background-color: #7f8c8d
+*/
+
+/* TODO: Create .btn-large class with:
+   - padding: 1rem 2rem
+   - font-size: 1.1rem
+*/
+
+/* ===== PRACTICE: HERO SECTION ===== */
+/* TODO: Create .hero class with:
+   - display: flex
+   - gap: 2rem
+   - align-items: center
+   - padding: 3rem 2rem
+   - max-width: 1200px
+   - margin: 0 auto
+*/
+
+/* TODO: Style .hero-figure with:
+   - flex: 1
+   - margin: 0
+*/
+
+/* TODO: Style .hero-image with:
+   - width: 100%
+   - height: auto
+   - display: block
+   - border-radius: 8px
+*/
+
+/* TODO: Style .hero-content with flex: 1 */
+/* TODO: Style .hero-content h1 with:
+   - font-size: 2.5rem
+   - margin-bottom: 1rem
+*/
+
+/* TODO: Style .hero-content p with:
+   - font-size: 1.1rem
+   - margin-bottom: 1.5rem
+*/
+
+/* TODO: Add media query for narrow screens (@media max-width: 600px):
+   - Change .hero flex-direction to column
+   - Adjust padding to 1.5rem
+*/
+
+/* ===== PRACTICE: FEATURE CARDS & FLEXBOX ===== */
+/* TODO: Create .featured-section with:
+   - padding: 3rem 2rem
+   - background-color: #fff
+   - margin: 2rem 0
+*/
+
+/* TODO: Style .featured-section h2 with:
+   - text-align: center
+   - margin-bottom: 2rem
+*/
+
+/* TODO: Create .features-container with:
+   - display: flex
+   - gap: 2rem
+   - flex-wrap: wrap
+   - justify-content: center (or space-around)
+   - max-width: 1200px
+   - margin: 0 auto
+*/
+
+/* TODO: Create .feature-card class with:
+   - flex: 1 1 calc(50% - 1rem)
+   - background-color: #f0f0f0
+   - padding: 2rem
+   - border-radius: 8px
+   - box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1)
+*/
+
+/* TODO: Style .feature-card h3 with margin-top: 0 */
+
+/* TODO: Add media query for mobile (@media max-width: 600px):
+   - Change .feature-card flex to flex: 1 1 100%
+*/
+
+/* ===== PRACTICE: CALL-TO-ACTION SECTION ===== */
+/* TODO: Create .cta-section with:
+   - background-color: #3498db
+   - color: #fff
+   - padding: 3rem 2rem
+   - text-align: center
+*/
+
+/* TODO: Style .cta-section h2 with:
+   - color: #fff
+   - font-size: 2rem
+   - margin-bottom: 1rem
+*/
+
+/* TODO: Style .cta-section p with:
+   - font-size: 1.1rem
+   - margin-bottom: 2rem
+*/
+
+/* ===== PRACTICE: FOOTER ===== */
+/* TODO: Create .site-footer with:
+   - background-color: #2c3e50
+   - color: #fff
+   - text-align: center
+   - padding: 2rem
+   - margin-top: 3rem
+*/
+
+/* TODO: Style .site-footer a with:
+   - color: #ffeb3b
+   - text-decoration: none
+   - :hover state with text-decoration: underline
+*/
+
+/* ===== PRACTICE: PAGE HEADER ===== */
+/* TODO: Create .page-header with:
+   - background-color: #ecf0f1
+   - padding: 2rem
+   - text-align: center
+   - margin-bottom: 2rem
+*/
+
+/* ===== PRACTICE: SUBJECT CARDS (SUBJECTS PAGE) ===== */
+/* TODO: Create .subjects-container with:
+   - display: flex
+   - gap: 2rem
+   - flex-wrap: wrap
+   - max-width: 1200px
+   - margin: 0 auto
+   - padding: 2rem
+*/
+
+/* TODO: Create .subjects-container .subject-card (descendant combinator) with:
+   - flex: 1 1 calc(33.333% - 1.5rem)
+   - background-color: #fff
+   - border: 1px solid #ddd
+   - border-radius: 8px
+   - padding: 1.5rem
+   - text-align: center
+   - transition: box-shadow 0.3s ease
+*/
+
+/* TODO: Add .subjects-container .subject-card:hover with:
+   - box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15)
+*/
+
+/* TODO: Style .subjects-container .subject-card figure with margin: 0 0 1rem 0 */
+/* TODO: Style .subjects-container .subject-card img with:
+   - max-width: 100px
+   - height: auto
+*/
+
+/* TODO: Add media query for mobile (@media max-width: 600px):
+   - Change .subject-card flex to flex: 1 1 100%
+*/
+
+/* ===== PRACTICE: RESOURCE FILTERING (RESOURCES PAGE) ===== */
+/* TODO: Create .filter-section with:
+   - padding: 2rem
+   - text-align: center
+   - background-color: #f9f9f9
+*/
+
+/* TODO: Create .filter-buttons with:
+   - display: flex
+   - gap: 1rem
+   - justify-content: center
+   - flex-wrap: wrap
+   - margin-top: 1rem
+*/
+
+/* TODO: Create .filter-btn with:
+   - background-color: #95a5a6
+   - color: #fff
+   - padding: 0.5rem 1rem
+   - border: none
+   - border-radius: 4px
+   - cursor: pointer
+   - transition: background-color 0.3s ease
+*/
+
+/* TODO: Add .filter-btn.active with background-color: #3498db */
+/* TODO: Add .filter-btn:hover with background-color: #3498db */
+/* TODO: Add .filter-btn:focus with outline: 2px solid #1a1a1a and outline-offset: 2px */
+
+/* ===== PRACTICE: RESOURCE ITEMS ===== */
+/* TODO: Create .resources-list with:
+   - display: flex
+   - flex-wrap: wrap
+   - gap: 2rem
+   - max-width: 1200px
+   - margin: 0 auto
+   - padding: 2rem
+*/
+
+/* TODO: Create .resource-item with:
+   - flex: 1 1 calc(50% - 1rem)
+   - background-color: #fff
+   - border: 1px solid #ddd
+   - padding: 1.5rem
+   - border-radius: 8px
+*/
+
+/* TODO: Style .resource-item h3 with margin-top: 0 */
+
+/* TODO: Style .resource-type with:
+   - font-weight: bold
+   - color: #3498db
+*/
+
+/* TODO: Create .resource-item.hidden with display: none */
+
+/* TODO: Add media query for mobile (@media max-width: 600px):
+   - Change .resource-item flex to flex: 1 1 100%
+*/
+
+/* ===== PRACTICE: TOOL SECTIONS ===== */
+/* TODO: Create .tool-section with:
+   - padding: 2rem
+   - max-width: 1200px
+   - margin: 0 auto
+   - border-bottom: 1px solid #ddd
+*/
+
+/* TODO: Create .tool-container with:
+   - background-color: #f9f9f9
+   - padding: 1.5rem
+   - border-radius: 8px
+*/
+
+/* ===== PRACTICE: TIMER STYLES ===== */
+/* TODO: Create .timer-display with:
+   - font-size: 3rem
+   - text-align: center
+   - margin: 1rem 0
+   - font-family: 'Courier New', monospace
+*/
+
+/* TODO: Create .timer-buttons with:
+   - display: flex
+   - gap: 1rem
+   - justify-content: center
+   - margin: 1rem 0
+*/
+
+/* ===== PRACTICE: CAROUSEL STYLES ===== */
+/* TODO: Create .carousel-container with:
+   - background-color: #fff
+   - border: 1px solid #ddd
+   - border-radius: 8px
+   - padding: 2rem
+   - margin: 1rem 0
+*/
+
+/* TODO: Create .carousel-slide with:
+   - display: none
+   - animation: fadeIn 0.3s ease-in
+*/
+
+/* TODO: Create .carousel-slide.active with display: block */
+
+/* TODO: Create @keyframes fadeIn animation:
+   - from: opacity: 0
+   - to: opacity: 1
+*/
+
+/* TODO: Create .carousel-buttons with:
+   - display: flex
+   - gap: 1rem
+   - justify-content: center
+   - margin-top: 1.5rem
+*/
+
+/* ===== PRACTICE: TEMPLATE CARDS ===== */
+/* TODO: Create .template-list with:
+   - display: flex
+   - gap: 2rem
+   - flex-wrap: wrap
+   - margin: 1rem 0
+*/
+
+/* TODO: Create .template-card with:
+   - flex: 1 1 calc(50% - 1rem)
+   - background-color: #fff
+   - border: 1px solid #ddd
+   - padding: 1.5rem
+   - border-radius: 8px
+*/
+
+/* TODO: Style .template-card button with margin-top: 1rem */
+
+/* ===== PRACTICE: COOKIE BANNER ===== */
+/* TODO: Create .cookie-banner with:
+   - background-color: #2c3e50
+   - color: #fff
+   - padding: 1rem
+   - position: fixed
+   - bottom: 0, left: 0, right: 0
+   - z-index: 1000
+   - box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1)
+*/
+
+/* TODO: Create .cookie-content with:
+   - max-width: 1200px
+   - margin: 0 auto
+   - display: flex
+   - justify-content: space-between
+   - align-items: center
+   - gap: 2rem
+*/
+
+/* TODO: Create .cookie-buttons with:
+   - display: flex
+   - gap: 1rem
+*/
+
+/* TODO: Create .cookie-hidden with display: none */
+
+/* TODO: Add media query for mobile (@media max-width: 600px):
+   - Change .cookie-content flex-direction to column
+   - Set gap to 1rem
+*/
+
+/* ===== PRACTICE: ACCESSIBILITY ===== */
+/* TODO: Create .accessible-hidden class with:
+   - position: absolute
+   - width: 1px, height: 1px
+   - overflow: hidden
+   - clip: rect(0, 0, 0, 0)
+*/
+
+/* TODO: Add focus states for button and a with:
+   - outline: 2px solid #ffeb3b
+   - outline-offset: 2px
+*/
+
+/* ===== PRACTICE: MEDIA QUERIES FOR RESPONSIVE DESIGN ===== */
+
+/* TODO: Small screens (@media max-width: 600px):
+   - .hero: flex-direction column, padding 1.5rem
+   - .feature-card: flex 1 1 100%
+   - .subject-card: flex 1 1 100%
+   - .resource-item: flex 1 1 100%
+   - nav menu: flex-direction column, gap 0.5rem
+   - .navbar-container: flex-direction column, gap 1rem
+   - .cookie-content: flex-direction column, gap 1rem
+   - .timer-display: font-size 2rem
+*/
+
+/* TODO: Medium screens (@media 601px to 900px):
+   - .subject-card: flex 1 1 calc(50% - 1rem)
+   - .resource-item: flex 1 1 calc(50% - 1rem)
+*/
+
+/* ===== PRACTICE: DARK MODE ===== */
+/* TODO: Add @media (prefers-color-scheme: dark) with CSS rules:
+   - body: background-color #1a1a1a, color #f9f9f9
+   - h1, h2, h3: color #f9f9f9
+   - Adjust other colors for dark theme (use light colors for text, dark for backgrounds)
+*/
+
+/* ===== PRACTICE: REDUCED MOTION ===== */
+/* TODO: Add @media (prefers-reduced-motion: reduce) with:
+   - * selector
+   - animation-duration: 0.01ms !important
+   - animation-iteration-count: 1 !important
+   - transition-duration: 0.01ms !important
+*/
+
+/* ===== PRACTICE: TOUCH DEVICES ===== */
+/* TODO: Add @media (pointer: coarse) with:
+   - button, a selectors
+   - Ensure minimum 48px touch target
+   - Set appropriate padding and min-height
+*/
+
+/* ===== ADDITIONAL UTILITY CLASSES ===== */
+/* TODO: Create .hidden with display: none */
+/* TODO: Create .text-center with text-align: center */
+/* TODO: Create .mt-1 with margin-top: 1rem */
+/* TODO: Create .mb-1 with margin-bottom: 1rem */
+/* TODO: Create .p-2 with padding: 2rem */

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Tools - Study Hub</title>
+    <link rel="stylesheet" href="styles/site-minimal-practice.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="site-title">📚 Study Hub</h1>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Study Tools</h1>
+            <p>Interactive tools to boost productivity and improve your study sessions.</p>
+        </section>
+
+        <!-- ===== PRACTICE: INTERACTIVE TIMER TOOL ===== -->
+        <section class="tool-section">
+            <h2>⏱️ Study Timer (Pomodoro)</h2>
+            <div class="tool-container">
+                <!-- Practice: Use <div> for styling/layout purposes (not semantic structure) -->
+                <!-- TODO: Build a simple timer that counts down and shows feedback -->
+
+                <div class="timer-display">
+                    <p>Time: <span id="timer-display">25:00</span></p>
+                    <!-- Practice: Unique ID for JavaScript to target this element -->
+                    <!-- TODO: Use JavaScript to update timer-display text when button is clicked -->
+                </div>
+
+                <div class="timer-buttons">
+                    <button id="timer-start" class="btn-primary" aria-label="start timer">Start (25 min)</button>
+                    <button id="timer-reset" class="btn-secondary" aria-label="reset timer">Reset</button>
+                </div>
+
+                <p class="tool-description">
+                    Use the Pomodoro technique: Study for 25 minutes, then take a 5-minute break.
+                </p>
+                <!-- TODO: Create scripts/timer.js with timer countdown logic -->
+            </div>
+        </section>
+
+        <!-- ===== PRACTICE: STUDY TIPS CAROUSEL ===== -->
+        <!-- Static carousel using CSS display toggling -->
+        <section class="tool-section">
+            <h2>💡 Study Tips & Tricks</h2>
+            <div class="carousel-container">
+                <!-- Practice: Use CSS display: none to hide carousel slides -->
+                <!-- Practice: Add CSS class to show active slide -->
+                <!-- TODO: Create .carousel-slide CSS class -->
+                <!-- TODO: Create .active class to show current slide (display: block) -->
+
+                <div class="carousel-slide active" id="tip-1">
+                    <h3>Tip 1: Active Recall</h3>
+                    <p>Test yourself on material without looking at your notes. This strengthens memory.</p>
+                </div>
+
+                <div class="carousel-slide" id="tip-2">
+                    <h3>Tip 2: Spaced Repetition</h3>
+                    <p>Review material over increasing intervals (1 day, 3 days, 1 week) to build long-term memory.</p>
+                </div>
+
+                <div class="carousel-slide" id="tip-3">
+                    <h3>Tip 3: Feynman Technique</h3>
+                    <p>Explain concepts in simple terms. If you can't explain it simply, you don't understand it well enough.</p>
+                </div>
+
+                <div class="carousel-slide" id="tip-4">
+                    <h3>Tip 4: Environment Matters</h3>
+                    <p>Study in a quiet, well-lit space. Remove distractions like phones to improve focus.</p>
+                </div>
+
+                <div class="carousel-slide" id="tip-5">
+                    <h3>Tip 5: Mind Mapping</h3>
+                    <p>Create visual diagrams connecting related concepts. This helps organize and remember information.</p>
+                </div>
+
+                <div class="carousel-buttons">
+                    <button id="tip-prev" class="btn-secondary" aria-label="previous tip">← Previous</button>
+                    <button id="tip-next" class="btn-secondary" aria-label="next tip">Next →</button>
+                </div>
+            </div>
+            <!-- TODO: Create scripts/tips-carousel.js with click event listeners -->
+            <!-- TODO: Use jQuery to add/remove .active class on carousel-slide elements -->
+        </section>
+
+        <!-- ===== PRACTICE: DARK MODE TOGGLE ===== -->
+        <!-- Media query + JavaScript theme switching -->
+        <section class="tool-section">
+            <h2>🌙 Dark Mode</h2>
+            <div class="tool-container">
+                <p>This site respects your system dark mode preference. You can also toggle manually:</p>
+                <button id="theme-toggle" class="btn-primary" aria-label="toggle dark mode">Enable Dark Mode</button>
+                <!-- Practice: Media query @media (prefers-color-scheme: dark) in CSS -->
+                <!-- TODO: Add JavaScript to toggle dark mode manually (save to localStorage) -->
+                <!-- TODO: Check localStorage on page load and apply saved theme preference -->
+            </div>
+        </section>
+
+        <!-- ===== PRACTICE: NOTE TEMPLATE SECTION ===== -->
+        <section class="tool-section">
+            <h2>📝 Note-Taking Templates</h2>
+            <div class="template-list">
+                <!-- Practice: <article> for each template -->
+                <!-- TODO: Add preview of each template -->
+
+                <article class="template-card">
+                    <h3>Cornell Notes</h3>
+                    <p>Divide page into notes, cues, and summary sections for organized note-taking.</p>
+                    <button class="btn-secondary" aria-label="view Cornell notes template">View Template</button>
+                </article>
+
+                <article class="template-card">
+                    <h3>Concept Map</h3>
+                    <p>Connect related ideas and concepts visually with this structured template.</p>
+                    <button class="btn-secondary" aria-label="view concept map template">View Template</button>
+                </article>
+
+                <article class="template-card">
+                    <h3>Study Outline</h3>
+                    <p>Hierarchical outline format for organizing chapters and main points.</p>
+                    <button class="btn-secondary" aria-label="view study outline template">View Template</button>
+                </article>
+
+                <article class="template-card">
+                    <h3>Flashcard Format</h3>
+                    <p>Simple question-answer format perfect for drilling vocabulary and facts.</p>
+                    <button class="btn-secondary" aria-label="view flashcard template">View Template</button>
+                </article>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Study Hub. All rights reserved.</p>
+        <p><a href="about.html">About</a> | <a href="about.html#privacy">Privacy</a> | <a href="about.html#contact">Contact</a></p>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/cookie-banner.js"></script>
+    <!-- TODO: Create timer.js for timer functionality -->
+    <!-- <script src="scripts/timer.js"></script> -->
+    <!-- TODO: Create tips-carousel.js for carousel navigation -->
+    <!-- <script src="scripts/tips-carousel.js"></script> -->
+</body>
+
+</html>

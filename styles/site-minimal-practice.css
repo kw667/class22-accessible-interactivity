@@ -1,0 +1,112 @@
+/* ========================================
+   STUDY HUB - MINIMAL PRACTICE STYLESHEET
+   CSS Practice for INFO 1300
+
+   Instructions: This template only lists the sections and goals.
+   You decide which CSS properties and values to use. No step-by-step hints!
+   ======================================== */
+
+/* ===== CSS RESET & BASE STYLES ===== */
+/* Reset default browser styles and set up base layout. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ROOT / BODY STYLES ===== */
+/* Set up font, colors, and background for the site. */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* ===== COLOR & CONTRAST ===== */
+/* Ensure good readability and visual hierarchy. */
+h1, h2, h3 {
+    color: #1a1a1a;
+    margin: 1rem 0.5rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== NAVIGATION BAR ===== */
+/* Create a responsive, accessible navigation bar. */
+.navbar{
+    background-color:#1a1a1a0f;
+    padding: 10px;
+}
+
+.navbar-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-content: start;
+    justify-content: space-between;
+}
+
+menu{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding-top: 30px;
+}
+
+/* ===== BUTTONS ===== */
+/* Style primary and secondary buttons for usability and accessibility. */
+
+/* ===== HERO SECTION ===== */
+/* Make a visually appealing hero section that adapts to screen size. */
+
+/* ===== FEATURE CARDS & FLEXBOX ===== */
+/* Arrange feature cards responsively using flexbox. */
+
+/* ===== CALL-TO-ACTION SECTION ===== */
+/* Highlight a call-to-action area. */
+
+/* ===== FOOTER ===== */
+/* Create a clear, accessible footer. */
+
+/* ===== PAGE HEADER ===== */
+/* Style the page header for clarity. */
+
+/* ===== SUBJECT CARDS (SUBJECTS PAGE) ===== */
+/* Arrange subject cards responsively and with good visual separation. */
+
+/* ===== RESOURCE FILTERING (RESOURCES PAGE) ===== */
+/* Style filter buttons and resource items for interactive filtering. */
+
+/* ===== TOOL SECTIONS ===== */
+/* Style tool containers and timer display. */
+
+/* ===== CAROUSEL STYLES ===== */
+/* Style carousel slides and navigation. */
+
+/* ===== TEMPLATE CARDS ===== */
+/* Style template cards for clarity and usability. */
+
+/* ===== COOKIE BANNER ===== */
+/* Make a fixed, dismissible cookie banner. */
+
+/* ===== ACCESSIBILITY ===== */
+/* Add styles for visually hidden content and focus states. */
+
+/* ===== MEDIA QUERIES FOR RESPONSIVE DESIGN ===== */
+/* Make the layout adapt to mobile, tablet, and desktop screens. */
+
+/* ===== DARK MODE ===== */
+/* Support dark mode using media queries. */
+
+/* ===== REDUCED MOTION ===== */
+/* Reduce animation for users who prefer it. */
+
+/* ===== TOUCH DEVICES ===== */
+/* Make touch targets large enough for mobile users. */
+
+/* ===== ADDITIONAL UTILITY CLASSES ===== */
+/* Add utility classes for spacing, alignment, and hiding elements. */

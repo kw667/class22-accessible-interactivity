@@ -1,322 +1,619 @@
-/* Note: No credit is provided for submitting design and/or code that is taken */
-/*       from course-provided examples.                                        */
-/*                                                                             */
-/* Do not copy this code into your project submission and then change it.      */
-/*                                                                             */
-/* Write your own code from scratch. Use this example as a REFERENCE only.     */
-/*                                                                             */
-/* You may not copy this code, change a few names/variables, and then claim it */
-/* as your own. It does not matter if you can explain what every line does.    */
-/*                                                                             */
-/* Examples are provided to help you learn. Copying the example and then       */
-/* changing it a bit, does not help you learn the learning objectives of the   */
-/* assignments. Write your own code from scratch to help you learn it.         */
+/* ========================================
+   STUDY HUB - STYLESHEET
+   CSS Practice for INFO 1300
+   ======================================== */
 
-html {
-  font-family: 'Lucida Grande', 'Cantarell', 'Arial', sans-serif;
-  background-color: #cfcbbf;
-}
-
-body {
-  background-color: #efece5;
-  color: #000000;
-
-  margin: 0 auto;
-  max-width: 800px;
-}
-
-h1 {
-  padding: 18px;
-  margin: 0;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-header h1 {
-  background-color: #efece5;
-  transition: background-color 0.4s;
-}
-
-nav menu {
-  display: flex;
-  flex-direction: row;
-
-  margin: 0;
-  padding: 0;
-}
-
-nav menu li {
-  list-style: none;
-}
-
-nav menu li a {
-  display: block;
-  padding: 10px;
-  padding-left: 18px;
-
-  border-bottom: 8px solid #efece5;
-  color: black;
-
-  font-size: 140%;
-  text-decoration: none;
-}
-
-nav menu li a:hover {
-  border-bottom: 8px solid #55bea9;
-  background-color: #ffffff;
-}
-
-h2 {
-  font-size: 160%;
-}
-
-cite {
-  font-size: 80%;
-}
-
-blockquote {
-  border-left: 2px solid #50525c;
-  padding: 0 10px;
-  margin-left: 0;
-  margin-bottom: 0;
-}
-
-blockquote p {
-  margin-bottom: 0;
-}
-
-.highlight-middle cite a {
-  color: white;
-}
-
-.left-image {
-  display: flex;
-  flex-direction: row;
-
-  gap: 16px;
-  /* padding: 0 16px; */
-
-  background-color: #ffffff;
-}
-
-.logo img {
-  display: block;
-  margin: 0 auto;
-}
-
-.theme-image img {
-  display: block;
-  width: 100%;
-  min-width: 300px;
-  max-width: 800px;
-}
-
-.highlight-top {
-  padding: 20px;
-
-  color: white;
-  background-color: #f3633e;
-}
-
-.highlight-middle {
-  padding: 20px;
-
-  color: white;
-  background-color: #3e587e;
-}
-
-.highlight-bright {
-  padding: 20px;
-
-  color: white;
-  background-color: #55bea9;
-}
-
-.readable {
-  padding: 16px;
-
-  background-color: white;
-  color: rgb(47, 70, 108);
-}
-
-.content-container {
-  display: flex;
-  flex-direction: row;
-  gap: 16px;
-}
-
-.readable p {
-  margin-top: 0;
-}
-
-.fit-width {
-  display: block;
-  width: 100%;
-  max-width: 800px;
-  min-width: 400px;
-}
-
-.button {
-  display: block;
-  width: max-content;
-
-  padding: 10px 20px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-color: #55bea9;
-  color: white;
-  text-decoration: none;
-  border-radius: 4px;
-}
-
-/* Cookie Banner */
-
-.banner {
-  display: flex;
-  align-items: center;
-
-  background: #fcbe57;
-  box-shadow: 0 0 5px 1px #0000004d;
-
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  border: none;
-  padding: 20px 30px;
-  position: fixed;
-  bottom: 0;
-  z-index: 10;
-}
-
-.banner .button {
-  font-size: 11pt;
-  box-sizing: border-box;
-  color: white;
-  background-color: black;
-  border: 2px solid black;
-
-  flex-grow: 0;
-  flex-shrink: 0;
-  margin-left: 20px;
-  cursor: pointer;
-}
-
-.banner p {
-  flex-grow: 1;
-}
-
-.banner .button:hover {
-  color: black;
-  background-color: white;
-  border: 2px solid black;
-}
-
-.hidden {
-  display: none !important;
-}
-
-/* Thumbnail Gallery */
-
-.thumbnail-gallery {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-  justify-content: center;
-  margin: 1em 0;
-}
-
-.thumbnail-gallery figure {
-  margin: 0;
-}
-
-.thumbnail-gallery figure>img {
-  margin: 0;
-  margin-bottom: 1em;
-}
-
-#gallery-thumbnails {
-  display: flex;
-  flex-direction: row;
-  gap: 1em;
-  flex-grow: 1;
-  min-width: 140px;
-}
-
-#gallery-thumbnails img {
-  display: block;
-  width: 100%;
-  height: auto;
-  padding: 0;
-  box-sizing: border-box;
-  border-radius: 6px;
-  border: 2px solid black;
-  background-color: black;
-  outline: none;
-}
-
-#gallery-figures figure {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.animals figure img {
-  width: 100%;
-}
-
-@media (min-width: 700px) {
-  .thumbnail-gallery {
-    flex-direction: row;
-  }
-
-  #gallery-thumbnails {
-    flex-direction: column;
-    flex-grow: 0;
-    width: 170px;
-    min-width: 140px;
-    max-width: 200px;
-  }
-}
-
-@media (max-width: 700px) {
-  header h1 {
-    background-color: #cfcbbf;
-  }
-
-  nav menu {
-    flex-direction: column;
-  }
-
-  nav menu li a {
-    display: block;
-    padding: 16px 8px 16px 12px;
-    border-left: 8px solid #efece5;
-    border-bottom: 0;
-  }
-
-  nav menu li a:hover {
-    border-left: 8px solid #55bea9;
-    border-bottom: 0;
-
-    border-bottom: none;
-    padding-bottom: 16px;
-  }
-
-  .left-image {
-    flex-direction: column;
-    background-color: inherit;
+/* ===== PRACTICE: CSS RESET & BASE STYLES ===== */
+/* Set box-sizing to border-box for easier dimension management */
+* {
+    margin: 0;
     padding: 0;
-  }
+    box-sizing: border-box;
+}
 
-  .content-container {
-    flex-direction: column;
-  }
+/* ===== PRACTICE: ROOT / BODY STYLES ===== */
+/* Practice: Generic font families with fallbacks */
+body {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
 
-  /* text for events */
-  .events-text {
-    order: 2;
-  }
+/* ===== PRACTICE: COLOR & CONTRAST ===== */
+/* Practice: High contrast between text and background for readability */
+h1,
+h2,
+h3 {
+    color: #1a1a1a;
+    margin: 1rem 0 0.5rem 0;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* ===== PRACTICE: NAVIGATION BAR ===== */
+/* Practice: Flexbox for horizontal navigation layout */
+.navbar {
+    background-color: #2c3e50;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* TODO: Adjust colors to match your design theme */
+}
+
+.navbar-container {
+    /* TODO: Use flexbox to arrange title and menu horizontally */
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.site-title {
+    color: #fff;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+/* Practice: Style navigation menu */
+nav menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav menu a {
+    color: #fff;
+    text-decoration: none;
+    /* Practice: Hover feedback for better UX */
+    /* TODO: Add color change on :hover */
+    /* TODO: Add transition for smooth effect */
+}
+
+/* Practice: Keyboard navigation & focus states */
+nav menu a:focus {
+    outline: 2px solid #ffeb3b;
+    outline-offset: 2px;
+}
+
+/* ===== PRACTICE: BUTTONS ===== */
+/* Practice: Reusable button classes for consistency */
+.btn-primary {
+    background-color: #3498db;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #2980b9;
+}
+
+/* Practice: Accessibility - visible focus state */
+.btn-primary:focus {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-secondary:focus {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+}
+
+/* Large button variant */
+.btn-large {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+}
+
+/* ===== PRACTICE: HERO SECTION ===== */
+/* Practice: Responsive hero with flexbox */
+.hero {
+    /* TODO: Use flexbox with flex-direction row for wide screens, column for narrow */
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    padding: 3rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-figure {
+    /* Practice: Image responsive sizing */
+    flex: 1;
+    margin: 0;
+}
+
+.hero-image {
+    /* Practice: Responsive image - fill available width */
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* TODO: Add media query for narrow screens (flex-direction: column) */
+
+/* ===== PRACTICE: FEATURE CARDS & FLEXBOX ===== */
+.featured-section {
+    padding: 3rem 2rem;
+    background-color: #fff;
+    margin: 2rem 0;
+}
+
+.featured-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.features-container {
+    /* Practice: Flexbox layout for responsive card arrangement */
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    /* TODO: Set justify-content for even spacing */
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Practice: CSS class selector for feature cards */
+.feature-card {
+    /* TODO: Set flex basis and grow for responsive sizing */
+    flex: 1 1 calc(50% - 1rem);
+    background-color: #f0f0f0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.feature-card h3 {
+    margin-top: 0;
+}
+
+/* TODO: Add media query to change flex basis for mobile (100% width) */
+
+/* ===== PRACTICE: CALL-TO-ACTION SECTION ===== */
+.cta-section {
+    background-color: #3498db;
+    color: #fff;
+    padding: 3rem 2rem;
+    text-align: center;
+    /* TODO: Center using flexbox + margin auto technique */
+}
+
+.cta-section h2 {
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+/* ===== PRACTICE: FOOTER ===== */
+.site-footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.site-footer a {
+    color: #ffeb3b;
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ===== PRACTICE: PAGE HEADER ===== */
+.page-header {
+    background-color: #ecf0f1;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* ===== PRACTICE: SUBJECT CARDS (SUBJECTS PAGE) ===== */
+.subjects-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+/* Practice: Descendant combinator selector */
+.subjects-container .subject-card {
+    flex: 1 1 calc(33.333% - 1.5rem);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    text-align: center;
+    transition: box-shadow 0.3s ease;
+}
+
+.subjects-container .subject-card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.subjects-container .subject-card figure {
+    margin: 0 0 1rem 0;
+}
+
+.subjects-container .subject-card img {
+    max-width: 100px;
+    height: auto;
+}
+
+/* TODO: Add media query for mobile (flex: 1 1 100%) */
+
+/* ===== PRACTICE: RESOURCE FILTERING (RESOURCES PAGE) ===== */
+.filter-section {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.filter-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+}
+
+/* Practice: Active state styling */
+.filter-btn {
+    background-color: #95a5a6;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.filter-btn.active {
+    background-color: #3498db;
+}
+
+.filter-btn:hover {
+    background-color: #3498db;
+}
+
+.filter-btn:focus {
+    outline: 2px solid #1a1a1a;
+    outline-offset: 2px;
+}
+
+/* ===== PRACTICE: RESOURCE ITEMS ===== */
+.resources-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.resource-item {
+    flex: 1 1 calc(50% - 1rem);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.resource-item h3 {
+    margin-top: 0;
+}
+
+.resource-type {
+    font-weight: bold;
+    color: #3498db;
+}
+
+/* Practice: Hidden state for filtering */
+.resource-item.hidden {
+    display: none;
+}
+
+/* TODO: Add media query for mobile (flex: 1 1 100%) */
+
+/* ===== PRACTICE: TOOL SECTIONS ===== */
+.tool-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.tool-container {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+/* ===== PRACTICE: TIMER STYLES ===== */
+.timer-display {
+    font-size: 3rem;
+    text-align: center;
+    margin: 1rem 0;
+    font-family: 'Courier New', monospace;
+    /* TODO: Add styling to make timer visually prominent */
+}
+
+.timer-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+/* ===== PRACTICE: CAROUSEL STYLES ===== */
+.carousel-container {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+/* Practice: CSS class to show/hide carousel slides */
+.carousel-slide {
+    display: none;
+    animation: fadeIn 0.3s ease-in;
+}
+
+.carousel-slide.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.carousel-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+/* ===== PRACTICE: TEMPLATE CARDS ===== */
+.template-list {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.template-card {
+    flex: 1 1 calc(50% - 1rem);
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.template-card button {
+    margin-top: 1rem;
+}
+
+/* ===== PRACTICE: COOKIE BANNER ===== */
+.cookie-banner {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    /* TODO: Add box-shadow for depth */
+}
+
+.cookie-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.cookie-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Practice: CSS class to hide cookie banner */
+.cookie-hidden {
+    display: none;
+}
+
+/* TODO: Add media query to stack cookie banner on mobile */
+
+/* ===== PRACTICE: ACCESSIBILITY ===== */
+/* Accessible hidden content - hidden from view but visible to screen readers */
+.accessible-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+
+/* Practice: Focus states for keyboard navigation */
+button:focus,
+a:focus {
+    outline: 2px solid #ffeb3b;
+    outline-offset: 2px;
+}
+
+/* ===== PRACTICE: MEDIA QUERIES FOR RESPONSIVE DESIGN ===== */
+
+/* Small screens (mobile) */
+@media (max-width: 600px) {
+
+    /* TODO: Stack hero section vertically */
+    .hero {
+        flex-direction: column;
+        padding: 1.5rem;
+    }
+
+    /* TODO: Make cards full width on mobile */
+    .feature-card {
+        flex: 1 1 100%;
+    }
+
+    .subject-card {
+        flex: 1 1 100%;
+    }
+
+    .resource-item {
+        flex: 1 1 100%;
+    }
+
+    /* TODO: Adjust navigation for small screens */
+    nav menu {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .navbar-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    /* TODO: Adjust cookie banner layout */
+    .cookie-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .timer-display {
+        font-size: 2rem;
+    }
+}
+
+/* Medium screens (tablet) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .subject-card {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    .resource-item {
+        flex: 1 1 calc(50% - 1rem);
+    }
+
+    /* TODO: Adjust other layouts for tablet */
+}
+
+/* ===== PRACTICE: DARK MODE ===== */
+/* Practice: Media query for user's dark mode preference */
+@media (prefers-color-scheme: dark) {
+    /* TODO: Add CSS rules to change to dark theme */
+    /* Example:
+    body {
+        background-color: #1a1a1a;
+        color: #f9f9f9;
+    }
+    */
+}
+
+/* ===== PRACTICE: REDUCED MOTION ===== */
+/* Practice: Accessibility - reduce animations for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* ===== PRACTICE: TOUCH DEVICES ===== */
+/* Practice: Larger clickable targets for touch devices */
+@media (pointer: coarse) {
+
+    button,
+    a {
+        /* Ensure minimum 48px touch target */
+        padding: 0.75rem 1.5rem;
+        min-height: 48px;
+        min-width: 48px;
+    }
+}
+
+/* ===== ADDITIONAL UTILITY CLASSES ===== */
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+.p-2 {
+    padding: 2rem;
 }

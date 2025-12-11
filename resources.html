@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Resources - Study Hub</title>
+    <link rel="stylesheet" href="styles/site-minimal-practice.css">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="site-title">📚 Study Hub</h1>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Study Resources</h1>
+            <p>Browse, filter, and organize your study materials by subject and type.</p>
+        </section>
+
+        <!-- ===== PRACTICE: STATIC CLIENT-SIDE INTERACTIVITY ===== -->
+        <!-- Filter buttons - practice adding/removing CSS classes with JavaScript -->
+        <section class="filter-section">
+            <h2>Filter by Subject</h2>
+            <div class="filter-buttons">
+                <!-- Practice: <button> elements for interactivity (not <div> or <a>) -->
+                <!-- Practice: Unique ID for each button - needed for JavaScript event listeners -->
+                <!-- TODO: Add id attributes to each button (e.g., id="filter-math") -->
+                <button class="filter-btn active" id="filter-all">All</button>
+                <button class="filter-btn" id="filter-math">Math</button>
+                <button class="filter-btn" id="filter-science">Science</button>
+                <button class="filter-btn" id="filter-history">History</button>
+                <button class="filter-btn" id="filter-languages">Languages</button>
+                <button class="filter-btn" id="filter-literature">Literature</button>
+            </div>
+        </section>
+        <!-- TODO: Create scripts/gallery.js to handle filter button clicks -->
+        <!-- TODO: Add/remove CSS classes to show/hide resources based on filter -->
+
+        <!-- ===== PRACTICE: RESOURCE CARDS WITH DATA ATTRIBUTES ===== -->
+        <!-- Each resource has a data-subject attribute for filtering -->
+        <section class="resources-list">
+            <!-- Practice: <article> for each resource item -->
+            <!-- Practice: data-* attributes store metadata for JavaScript filtering -->
+            <!-- TODO: Add more resources with different subjects -->
+
+            <article class="resource-item" data-subject="math">
+                <h3>Algebra Fundamentals Guide</h3>
+                <p class="resource-type">📖 Study Guide</p>
+                <p>A comprehensive guide covering equations, inequalities, and graphing.</p>
+                <a href="#" class="btn-secondary" aria-label="view algebra guide">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="math">
+                <h3>Calculus Problem Set</h3>
+                <p class="resource-type">📝 Practice Problems</p>
+                <p>50 practice problems with solutions for limits, derivatives, and integrals.</p>
+                <a href="#" class="btn-secondary" aria-label="view calculus problems">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="science">
+                <h3>Biology Lab Notebook</h3>
+                <p class="resource-type">🔬 Lab Guide</p>
+                <p>Templates and guides for documenting biology experiments and observations.</p>
+                <a href="#" class="btn-secondary" aria-label="view biology lab guide">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="science">
+                <h3>Physics Cheat Sheet</h3>
+                <p class="resource-type">📋 Quick Reference</p>
+                <p>One-page reference for common physics formulas and concepts.</p>
+                <a href="#" class="btn-secondary" aria-label="view physics cheat sheet">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="history">
+                <h3>World History Timeline</h3>
+                <p class="resource-type">📅 Timeline</p>
+                <p>Interactive timeline of major historical events organized by century.</p>
+                <a href="#" class="btn-secondary" aria-label="view history timeline">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="history">
+                <h3>Essay Writing Guide</h3>
+                <p class="resource-type">✍️ Writing Guide</p>
+                <p>How to write compelling history essays with proper citations.</p>
+                <a href="#" class="btn-secondary" aria-label="view essay guide">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="languages">
+                <h3>Spanish Vocabulary Deck</h3>
+                <p class="resource-type">🗣️ Vocab List</p>
+                <p>1000+ essential Spanish vocabulary words organized by topic.</p>
+                <a href="#" class="btn-secondary" aria-label="view Spanish vocabulary">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="languages">
+                <h3>French Grammar Rules</h3>
+                <p class="resource-type">📚 Grammar Guide</p>
+                <p>Comprehensive guide to French grammar with examples and exercises.</p>
+                <a href="#" class="btn-secondary" aria-label="view French grammar">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="literature">
+                <h3>Shakespeare Study Notes</h3>
+                <p class="resource-type">📖 Study Notes</p>
+                <p>Detailed notes on major Shakespeare plays with character analysis.</p>
+                <a href="#" class="btn-secondary" aria-label="view Shakespeare notes">View</a>
+            </article>
+
+            <article class="resource-item" data-subject="literature">
+                <h3>Essay Outline Templates</h3>
+                <p class="resource-type">📝 Templates</p>
+                <p>Customizable templates for literary analysis and persuasive essays.</p>
+                <a href="#" class="btn-secondary" aria-label="view essay templates">View</a>
+            </article>
+        </section>
+        <!-- TODO: Use CSS class .hidden + display: none to filter items -->
+        <!-- TODO: Style .resource-item with flexbox for responsive card layout -->
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Study Hub. All rights reserved.</p>
+        <p><a href="about.html">About</a> | <a href="about.html#privacy">Privacy</a> | <a href="about.html#contact">Contact</a></p>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/cookie-banner.js"></script>
+    <!-- TODO: Create scripts/gallery.js for resource filtering interactivity -->
+    <script src="scripts/gallery.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Subjects - Study Hub</title>
+    <link rel="stylesheet" href="styles/site-minimal-practice.css">
+</head>
+
+<body>
+
+    <!-- ===== PRACTICE: MULTI-PAGE NAVIGATION (SAME ON ALL PAGES) ===== -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <h1 class="site-title">📚 Study Hub</h1>
+            <menu>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="subjects.html">Subjects</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="tools.html">Tools</a></li>
+                <li><a href="about.html">About</a></li>
+            </menu>
+        </div>
+    </nav>
+
+    <main>
+        <!-- ===== PRACTICE: PAGE HEADING ===== -->
+        <section class="page-header">
+            <h1>Study Subjects</h1>
+            <p>Select a subject to find curated study resources and materials.</p>
+        </section>
+
+        <!-- ===== PRACTICE: CSS GRID / FLEXBOX CARD LAYOUT ===== -->
+        <!-- Cards for each major subject - great for practicing layout -->
+        <section class="subjects-container">
+            <!-- Practice: <article> elements for independent subject cards -->
+            <!-- Practice: Descendant combinator - .subjects-container article { } -->
+            <!-- Practice: CSS class selector - .subject-card { } -->
+            <!-- TODO: Add images for each subject (in images/subjects/ folder) -->
+
+            <article class="subject-card">
+                <figure>
+                    <!-- Practice: Responsive image in figure -->
+                    <img src="images/subjects/math.svg" alt="Mathematics subject icon">
+                </figure>
+                <h2>Mathematics</h2>
+                <p>Algebra, calculus, geometry, and statistics resources.</p>
+                <a href="resources.html?subject=math" class="btn-secondary">View Resources</a>
+            </article>
+
+            <article class="subject-card">
+                <figure>
+                    <img src="images/subjects/science.svg" alt="Science subject icon">
+                </figure>
+                <h2>Science</h2>
+                <p>Biology, chemistry, physics, and environmental science.</p>
+                <a href="resources.html?subject=science" class="btn-secondary">View Resources</a>
+            </article>
+
+            <article class="subject-card">
+                <figure>
+                    <img src="images/subjects/history.svg" alt="History subject icon">
+                </figure>
+                <h2>History</h2>
+                <p>World history, U.S. history, and cultural studies.</p>
+                <a href="resources.html?subject=history" class="btn-secondary">View Resources</a>
+            </article>
+
+            <article class="subject-card">
+                <figure>
+                    <img src="images/subjects/languages.svg" alt="Languages subject icon">
+                </figure>
+                <h2>Languages</h2>
+                <p>Spanish, French, Mandarin, and other language resources.</p>
+                <a href="resources.html?subject=languages" class="btn-secondary">View Resources</a>
+            </article>
+
+            <article class="subject-card">
+                <figure>
+                    <img src="images/subjects/literature.svg" alt="Literature subject icon">
+                </figure>
+                <h2>Literature</h2>
+                <p>English, writing, and literary analysis guides.</p>
+                <a href="resources.html?subject=literature" class="btn-secondary">View Resources</a>
+            </article>
+
+            <article class="subject-card">
+                <figure>
+                    <img src="images/subjects/engineering.svg" alt="Engineering subject icon">
+                </figure>
+                <h2>Engineering</h2>
+                <p>Computer science, programming, and STEM topics.</p>
+                <a href="resources.html?subject=engineering" class="btn-secondary">View Resources</a>
+            </article>
+        </section>
+        <!-- TODO: Use CSS class selector .subjects-container with flexbox or grid -->
+        <!-- TODO: Use flexbox with flex-wrap for responsive card layout -->
+        <!-- TODO: Use descendant combinator to style .subjects-container > article -->
+
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2025 Study Hub. All rights reserved.</p>
+        <p><a href="about.html">About</a> | <a href="about.html#privacy">Privacy</a> | <a href="about.html#contact">Contact</a></p>
+    </footer>
+
+    <script src="scripts/jquery-3.7.1.js"></script>
+    <script src="scripts/cookie-banner.js"></script>
+</body>
+
+</html>
